@@ -1,13 +1,10 @@
-import React from 'react';
-import BlogPosts from './BlogPosts';
-import './App.css';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './BlogPosts.jsx'
+import './App.css'
 
-const App = () => {
-  return (
-    <div className="App">
-      <BlogPosts />
-    </div>
-  );
-};
-
-export default App;
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
